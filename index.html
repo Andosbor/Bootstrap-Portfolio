@@ -3,44 +3,73 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>About | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>About | Your Name</title> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+  <!--creating a functioning navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <a class="navbar-brand" href="#">Andrew Osborn</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
-  </header>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>About Me</h1>
-
-      <img src="assets/images/cat.jpg" class="auth-image" alt="Your Name">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
-
-      <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
-
-      <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-
+  <div class="container">
+    <!--making 4 rows for the page including the footer-->
+    <section class="row">
+      <div class="col-md-3 bg-secondary mb-5 p-2 rounded text-center">
+        <!--putting a border under About Me-->
+          <h1><span class="border-bottom"></span> About Me</span></h1>
+        
+      
+      </div>
     </section>
+    <section class="row">
+      <div class="col-sm-3">
+        <!--attempting to put a border around the picture of my face-->
+          <img src="assets/images/myFace.jpg" class="img-thumbnail" alt="Your Name">
+      </div>
+      <div class="col-sm-9  mb-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vestibulum luctus felis, ac rhoncus nunc porttitor condimentum. Mauris sit amet dolor eu elit varius varius facilisis id arcu. Proin vel dui massa. Nunc rhoncus fringilla pharetra. Vestibulum bibendum consectetur euismod. Proin commodo purus vitae sollicitudin consectetur.</p>
+
+          <p>Donec vehicula lacus at leo feugiat lacinia. In et ex ultrices, ultrices neque non, pretium odio. Nunc id eros iaculis, pulvinar quam eget, egestas mauris.</p>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-sm-12 mb-3">
+    
+          <p>Suspendisse dictum, arcu at convallis faucibus, quam sapien tincidunt nunc, sit amet egestas nibh tortor et mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p><p>
+
+      </div>
+    </section>
+    <footer>
+      <section class="row">
+        <div class="col-md-12 bg-secondary text-center w-100 p-3">
+            Copyright &copy; 
+          </div>
+    </section>
+  </footer>
 
   </div>
 
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
-  </footer>
 </body>
 
 </html>
